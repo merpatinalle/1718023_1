@@ -24,11 +24,11 @@ public class AppSeting extends AppCompatActivity {
         setContentView(R.layout.activity_app_seting);
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.settings_container, new MyPreferenceFargmnet())
+                .replace(R.id.settings_container, new MyPreferenceFargment())
                 .commit();
     }
 
-    public static class MyPreferenceFargmnet extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
+    public static class MyPreferenceFargment extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
     String setting_locale;
 
         @Override
